@@ -9,9 +9,17 @@
     <h>Each sensor should correspond and handle only one type of plant.</h><br>
     <br>
     <form action="http://localhost:5000/api/v1/sensors" method="post">
-        <input type="text" required placeholder="Enter your sensor module id here" label="sensor_module_id">
+        <input type="text" required placeholder="Enter your sensor module id here" label="sensor_module_id"> &bigoplus;
+        <h>select the associated plant:</h>
         <!--<h> select the plant name this sensor is monitoring: (drop down)</h>-->
-        <input type="text" required placeholder="Enter the name of the plant this sensor is associated with" label="sensor_plant">
+        <select name="plant_selection" id="available_plants" required>
+          <option value="none">None</option>
+          <option value="plant_A">plant_A</option>
+          <option value="plant_B">plant_B</option>
+          <option value="plant_C">plant_C</option>
+          <option value="plant_D">plant_D</option>
+        </select>
+        <!--<input type="text" required placeholder="Enter the name of the plant this sensor is associated with" label="sensor_plant">-->
         <button label="register_new_sensor_module">Register a new sensor</button>
     </form>
   </body>

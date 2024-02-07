@@ -12,7 +12,15 @@
         <input type="text" required placeholder="Enter your wattering module id here" label="wattering_module_id">
 
         <!--<h>Select the sansor this Wattering module is associated to: (drop down)</h>-->
-        <input type="text" required placeholder="Enter the correspondant sensor id" label="wattering_corsp_sensor">
+        &bigoplus;
+        <h>select the associated sensor:</h>
+        <!--<h> select the plant name this sensor is monitoring: (drop down)</h>-->
+        <select name="sensor_selection" id="available_sensors" required>
+          <option value="none">None</option>
+          <option value="sensor_1">sensor-12345001</option>
+          <option value="sensor_2">sensor-12345002</option>
+        </select>
+        <!--<input type="text" required placeholder="Enter the correspondant sensor id" label="wattering_corsp_sensor">-->
         <button label="register_new_wattering_module">Register a new wattering module</button>
     </form>
   </body>
