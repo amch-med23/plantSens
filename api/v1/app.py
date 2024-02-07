@@ -3,9 +3,12 @@
 
 from flask import Flask, jsonify, make_response
 from api.v1.views import app_views
+from flask_cors import CORS
+
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
+cors = CORS(app, resources={r'/api/*': {'origins': '*'}})
 
 app.register_blueprint(app_views, url_prefix='/api/v1/')
 @app.errorhandler(404)
