@@ -1,0 +1,11 @@
+DB name = plant_mock_data
+   tables = Sansor id (String256)
+   	    temp_value (Int)
+	    humidity_value (Int)
+	    soil_ph (Int)
+
+user for this DB:
+     name = plant_user
+     host = localhost
+     password = plant_user_pwd (native mysql password)
+     permissions = has all permissions on 'plant_mock_data'
