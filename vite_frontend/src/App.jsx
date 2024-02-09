@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import {Routes, Route} from 'react-router-dom'
+import React from 'react';
 
-import Home from '/pages/home'
-import RegisterNewIotRouter from '/pages/register_new_iot_router'
-import RegisterNewSensor from '/pages/register_new_sensor'
-import RegisterNewWaterModule from '/pages/register_new_watermodule'
-import ControlPanel from '/pages/control_panel'
+import Home from './componenets/home'
+import RegisterNewIotRouter from './componenets/register_new_iot_router'
+import RegisterNewSensor from './componenets/register_new_sensor'
+import RegisterNewWaterModule from './componenets/register_new_watermodule'
+import ControlPanel from './componenets/control_panel'
+import SensorSubmition from './componenets/target_sensor_submition'
+import IotRouterSubmition from './componenets/target_iot_router_submition'
+import WaterModuleSubmition from './componenets/target_water_module_submition'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <Route path='register_new_sensor' element={<RegisterNewSensor />} />
         <Route path='register_new_watter_module' element={<RegisterNewWaterModule />} />
         <Route path='control_panel' element={<ControlPanel />} />
+        <Route path='new_iot_router_submitted' element={<IotRouterSubmition />} />
+        <Route path='new_sensor_submitted' element={<SensorSubmition />} />
+        <Route path='new_water_module_submitted' element={<WaterModuleSubmition />} />
       </Routes>
       
     </>
