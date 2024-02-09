@@ -10,7 +10,7 @@ and how much water it gives alongside with the duration and the repetation time 
 
 #### This project has two interfaces:
 
-* User interface:
+##### User interface:
      a user with a registered acoount can log in and manage his equipments.
       -> a user buys the equipments (sensors and wattering modules)
       -> then the user installs them in his planting envirenment based on the documentaion (Docs will be availabe in the client web interface), this includes the installation of IOT router (This can be done as well by one of our spetialists).
@@ -20,7 +20,7 @@ and how much water it gives alongside with the duration and the repetation time 
       -> the user will have an option to let the system decides when it carries it's OPS or if he will take care of it manually, this can be changes any time via the user interface.
      -> more to come ...
 
-* API:
+##### API:
       This is used by the system to communicate with the devices the user has registered (using IOT router),
      and it's used to send instruction to other models in the user equipments after the system is done processing the
      initial request.
