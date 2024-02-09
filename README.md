@@ -13,7 +13,7 @@ and how much water it gives alongside with the duration and the repetation time 
 #### User interface:
       a user with a registered acoount can log in and manage his equipments.
       -> a user buys the equipments (sensors and wattering modules)
-      -> then the user installs them in his planting envirenment based on the documentaion (Doc will be availabe in the client web interface), this includes the installation of IOT router (This can be done as well by one of our spetialists).
+      -> then the user installs them in his planting envirenment based on the documentaion (Docs will be availabe in the client web interface), this includes the installation of IOT router (This can be done as well by one of our spetialists).
       -> after that the user registers an account in our domain name with his creds, he will be asked to register the modules he purchesed so he or the system can control them.
       -> the user interface provides a simple way to control and monitor various parts of the system.
       -> the user will be notified on multiple occusions (Data change(if something goes wrong...), Action taken(wattering ...))
@@ -37,4 +37,32 @@ and how much water it gives alongside with the duration and the repetation time 
 
 * I guess this is the only note for now in terms of the mock data.
 
-* The User Interface could be simple for the first MVP presentation (Week 3), but we will implement user Authentication and a nice view later (befour week 5) using one of the widely available fron-ent frameworks.
+* The User Interface could be simple for the first MVP presentation (Week 3), but we will implement user Authentication and a nice view later (befour week 5) using vite react front-end frameworks.
+#### Tech stack:
+      front-end: vite react (React JS)
+      back-end: Python (flask framework)
+                Database: Mysql / PostgreSQL
+                Business logic: Python
+                API: Python (flask endpoints)
+#### Project structure:
+      flask_backend |
+                    |- api/ |
+                            |- v1/ |
+                                   |- __init__.py
+                                   |- app.py (the python model for app)
+                                   |- views/ |
+                                            |- __init__.py
+                                            |- index.py (contains the views model)
+                    |- models/ |
+                               | - __init__.py (makes this a package)
+                               | - engine/ (handles Database storage)
+      vite_frontend |
+                    | - well a lot is in here but just front-end stuff (weill be updated later)
+#### Development specs:
+      requirements: Python3 >= 3.4 + flask package + request package (see more in the required pacakges or dependencies section)
+                    node >= 18.04
+                    npm >= 10.0.2
+      ports: This project is being developed on a windows machine with WSL2, so the host for both end (back, front) is 'http://wsl.localhost'.
+             front-end interface is listening on port: 5173
+             back-end API interface is lestening on port: 5000                   
+      
