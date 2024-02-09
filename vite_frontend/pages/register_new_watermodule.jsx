@@ -7,7 +7,7 @@ function RegisterNewWaterModule() {
             <h>You need to connect the wattering module pipes to the soil where the corresponding sensor is installed.</h><br /><br />
             <h>Each Wattering module should handle the soil of the plants the associated sensor handles.</h><br />
             <br />
-            <form action="http://localhost:5000/api/v1/watters" method="post">
+            <form action="http://wsl.localhost:5000/api/v1/watters" method="post">
                 <input type="text" required placeholder="Enter your wattering module id here" name="wattering_module_id" />
                 {/*<h>Select the sansor this Wattering module is associated to: (drop down)</h>*/}
                 &nbsp; &nbsp;

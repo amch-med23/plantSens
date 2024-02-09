@@ -7,7 +7,7 @@ function RegisterNewSensor() {
             <h>You need to place the Sensors in the plants shared soil (each sensor must be installed in the soil where only one type of plants is planted and growing, You will identify this in the plant selection)</h><br /><br />
             <h>Each sensor should correspond and handle only one type of plant.</h><br />
             <br />
-            <form action="http://localhost:5000/api/v1/sensors" method="post">
+            <form action="http://wsl.localhost:5000/api/v1/sensors" method="post">
                 <input type="text" required placeholder="Enter your sensor module id here" name="sensor_module_id" />
                 &nbsp;&nbsp;
                 <h>select the associated plant:</h>
