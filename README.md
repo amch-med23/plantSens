@@ -1,5 +1,5 @@
-# Plant Care Taker
-
+# Plant Care Taker (plantSens)
+#### project name: plantSens
 #### This is the Plant Care Taker Portfolio project for ALX/Holbertoon.
 
 #### Description yet to come.
