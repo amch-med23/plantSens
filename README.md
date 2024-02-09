@@ -59,10 +59,15 @@ and how much water it gives alongside with the duration and the repetation time 
       vite_frontend |
                     | - well a lot is in here but just front-end stuff (weill be updated later)
 #### Development specs:
-      requirements: Python3 >= 3.4 + flask package + request package (see more in the required pacakges or dependencies section)
+      requirements: Python3 >= 3.4 + flask package + requests package (see more in the required pacakges or dependencies section)
                     node >= 18.04
                     npm >= 10.0.2
       ports: This project is being developed on a windows machine with WSL2, so the host for both end (back, front) is 'http://wsl.localhost'.
              front-end interface is listening on port: 5173
-             back-end API interface is lestening on port: 5000                   
-      
+             back-end API interface is lestening on port: 5000
+#### Python required pacakges (Dependencies):
+      SQLAlchemy                >=1.4.0
+      requests                  >=2.31.0
+      Flask                     >=2.1.0
+      Flask-Cors                >=4.0.0
+      appdirs                   >=1.4.4
