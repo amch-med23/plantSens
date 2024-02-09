@@ -62,9 +62,9 @@ and how much water it gives alongside with the duration and the repetation time 
       requirements: Python3 >= 3.4 + flask package + requests package (see more in the required pacakges or dependencies section)
                     node >= 18.04
                     npm >= 10.0.2
-      ports: This project is being developed on a windows machine with WSL2, so the host for both end (back, front) is 'http://wsl.localhost'.
+      ports: This project is being developed on a windows machine with WSL2, so the host for both ends (back, front) is 'http://wsl.localhost'.
              front-end interface is listening on port: 5173
-             back-end API interface is lestening on port: 5000
+             back-end API interface is listening on port: 5000
 #### Python required pacakges (Dependencies):
       SQLAlchemy                >=1.4.0
       requests                  >=2.31.0
