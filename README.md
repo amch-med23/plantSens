@@ -72,5 +72,5 @@ and how much water it gives alongside with the duration and the repetation time 
       Flask-Cors                >=4.0.0
       appdirs                   >=1.4.4
 #### To run this project services:
-     For back end API, at the project root dir (~plantSens: ) run: python3 -m api.v1.app # this runs the app model API.
-     For front end, at the front end project folder (~plantSens/vite_frontend/ ) run: npm run dev # this will start a development server.
+     For back end API, at the back-end project folder (~plantSens/flask_backend: ) run: python3 -m api.v1.app # this runs the app model API.
+     For front end, at the front-end project folder (~plantSens/vite_frontend/ ) run: npm run dev # this will start a development server.
